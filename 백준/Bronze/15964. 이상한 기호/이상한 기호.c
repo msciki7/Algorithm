@@ -1,21 +1,17 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int calculation(int, int);
+
 
 int main() {
    
-    int a, b;
-    scanf("%d %d", &a, &b);
+    long long a, b;
+    scanf("%lld %lld", &a, &b);
 
-    int result = calculation(a, b);
+    long long result = (a + b) * (a - b);
 
-    printf("%d", result);
+    printf("%lld", result);
 
     return 0;
 }
 
-int calculation(int a, int b) {
-    
-    return (a + b) * (a - b);
-}
